@@ -28,7 +28,7 @@ def _install(args, use_cache, debug, compile):
                     raise
     else:
         message = "The dataset \"{}\" isn't available in the Retriever. " \
-                  "Run retriever.datasets()to list the currently available " \
+                  "Run retriever.dataset_names() to list the currently available " \
                   "datasets".format(args['dataset'])
         raise ValueError(message)
 
